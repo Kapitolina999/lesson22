@@ -10,18 +10,38 @@ class Cube:
         self.y = y
         self.z = z
 
+
+class CubeVolumeCalculator:
+    def __init__(self, cube):
+        self.cube = cube
+
     def get_x(self):
-        return self.x
+        return self.cube.x
 
     def get_y(self):
-        return self.y
+        return self.cube.y
 
     def get_z(self):
-        return self.z
+        return self.cube.z
+
+    @staticmethod
+    def calc_cube_volume(self):
+        return self.get_x() * self.get_y() * self.get_z()
+
+
+class Cube:
+
+    def __init__(self, x, y, z):
+        self.x = x
+        self.y = y
+        self.z = z
+
+    def get_volume(self):
+        return self.x * self.y * self.z
 
 
 class CubeVolumeCalculator:
 
     @staticmethod
     def calc_cube_volume(cube):
-        return cube.get_x() * cube.get_y() * cube.get_z()
+        return cube.get_volume()
