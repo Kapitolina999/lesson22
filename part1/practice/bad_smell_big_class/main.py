@@ -11,17 +11,17 @@
 # Для решения этой задачи не используйте наследование
 
 class Warrior:
-    def __int__(self):
+    def __init__(self):
         pass
 
     def attack(self):
-        pass
+        print('Атакую')
 
     def defense(self):
-        pass
+        print('Защищаюсь')
 
     def move(self):
-        pass
+        print('Иду')
 
 
 class Healer:
@@ -29,13 +29,13 @@ class Healer:
         pass
 
     def defense(self):
-        pass
+        print('Защищаюсь')
 
     def move(self):
-        pass
+        print('Иду')
 
     def heal(self):
-        pass
+        print('Лечу')
 
 
 class Tree:
@@ -43,10 +43,10 @@ class Tree:
         pass
 
     def defense(self):
-        pass
+        print('Защищаюсь')
 
     def on_fire(self):
-        pass
+        print('Горю')
 
 
 class Trap:
